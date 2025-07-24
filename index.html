@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pavan Kumar Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+  <div id="tsparticles"></div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Nallani Pavan Kumar</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="emoji">👨🏻‍💻</div>
+    <div class="home-right">
+      <h2 class="greeting">Hey I'm <span class="name-highlight">Pavan Kumar</span></h2>
+      <div class="text-container">
+        <div class="intro-text">I'm</div>
+        <div class="typing-container" id="typing-text"></div>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/Pavan081104" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="http://www.linkedin.com/in/nallani-pavan-kumar-82178a285" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="buttons">
+        <a href="#contact" class="btn hire">Hire Me</a>
+        <a href="https://drive.google.com/file/d/1HjIMGFDOeFyoMIDohrEWt9jyHgFBLGMI/view?usp=drive_link" class="btn download" download>RESUME</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <!-- Left: Image -->
+      <div class="about-image">
+        <img src="images/profile.jpg" alt="Nallani Pavan Kumar" />
+      </div>
+
+      <!-- Right: About Content -->
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+          To secure a software engineering internship, I will apply my proficiency in programming languages and software
+          design to solve complex technical challenges. I am eager to contribute to the development of scalable, distributed
+          software systems that create a tangible impact on millions of users. My goal is to expand my technical skills and gain
+          hands-on experience by collaborating with a productive and innovative team on a wide variety of projects.
+        </p>
+
+        <!-- Tabs -->
+        <div class="about-tabs">
+          <button class="tab-button active" data-tab="skills">Skills</button>
+          <button class="tab-button" data-tab="education">Education</button>
+        </div>
+
+        <!-- Tab content -->
+        <div class="tab-content">
+          <div id="skills" class="tab-panel active">
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Languages:</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Python</span>
+                  <span class="skill-tag">C</span>
+                  <span class="skill-tag">SQL</span>
+                  <span class="skill-tag">JavaScript</span>
+                  <span class="skill-tag">HTML/CSS</span>
+                  <span class="skill-tag">Node.js</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Frameworks:</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">React</span>
+                  <span class="skill-tag">TailwindCSS</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Databases:</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">MySQL</span>
+                  <span class="skill-tag">MongoDB</span>
+                </div>
+              </div>
+              <div class="skill-category">
+                <h4>Tools:</h4>
+                <div class="skill-tags">
+                  <span class="skill-tag">Git</span>
+                  <span class="skill-tag">GitHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="education" class="tab-panel">
+            <div class="education-item">
+              <h4>Bachelor of Technology</h4>
+              <p>Artificial Intelligence & Data Science</p>
+              <p>Vasireddy Venkatadri Institute of Technology, Nambur</p>
+              <p>August 2022 - April 2026 | CGPA: 7.55</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Crop Yield Predictor</h3>
+          <p>Built a web app using Flask and Machine Learning to predict crop yields based on environmental factors.
+             Designed an intuitive frontend with HTML/CSS and used MongoDB to store user data and prediction results.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <a href="https://github.com/Pavan081104/Crop-Yield-Predictor" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+
+        <div class="project-card">
+          <h3>To-Do List Web App</h3>
+          <p> A simple and elegant task manager application with database integration.
+              Created UI using HTML & CSS and backend APIs using Node.js & Express.
+              Integrated MySQL for storing and managing user tasks.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+          <a href="https://github.com/Pavan081104/ToDoList" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications-section">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="carousel-container">
+        <div class="carousel" id="certificationsCarousel">
+
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="images/Python for Data Science page.jpg" alt="Python for Data Science – NPTEL" />
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="images/Cloud Computing page.jpg" alt="Cloud Computing – NPTEL" />
+            </div>
+          
+          </div>
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="images/aicte AWS data engineering.jpg" alt="Data engineering virtual internship - AICTE" />
+            </div>
+            
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="images/Altair page.jpg" alt="Data science master virtual internship - AICTE" />
+            </div>
+          
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="images/Infosys page.jpg" alt="Basics of python - Infosys Springboard " />
+            </div>
+            
+          </div>
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="images/oracle cloud infrastructure page.jpg" alt="Oracle Certified foundations associate - Oracle University" />
+            </div>
+            
+          </div>
+          <div class="cert-card">
+            <div class="cert-image">
+              <img src="images/sql_basic certificate page.jpg" alt="SQL Basic - HackeRank" />
+            </div>
+            
+          </div>
+        </div>
+        <button class="carousel-btn prev" onclick="scrollCarousel(-1)">❮</button>
+        <button class="carousel-btn next" onclick="scrollCarousel(1)">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>npavankumar81104@gmail.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div>
+              <h3>LinkedIn</h3>
+              <a href="http://www.linkedin.com/in/nallani-pavan-kumar-82178a285" target="_blank">Connect with me</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
